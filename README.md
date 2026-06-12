@@ -10,8 +10,10 @@ Eben Upton and licensed BSD-2-Clause — see LICENSE-ASSETS, which the
 Makefile also stages into every built pdx so binary redistribution
 carries the notice, as the license requires. Volume 2 content credits:
 games by Andrew Gillett with Eben Upton and Sean M. Tracey, graphics by
-Dan Malone, audio by Allister Brimble. The Lua implementations are
-original work.
+Dan Malone, audio by Allister Brimble. The Lua implementations are a
+derivative work of Code the Classics and are licensed under the same
+BSD-2-Clause terms — see LICENSE (the whole work) and LICENSE-ASSETS
+(the upstream notice, preserved verbatim).
 
 Build: `make <game>` or `make all` -> out/<Title>.pdx
 Verify: `make <game>-smoke && tools/smoke.sh <game> [secs] [until-grep]`
