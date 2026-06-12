@@ -2,5 +2,5 @@
 
 import "CoreLibs/graphics"
 
-import "util"
+import "cutil"
 import "harness"

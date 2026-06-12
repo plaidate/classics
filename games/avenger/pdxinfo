@@ -1,0 +1,6 @@
+name=Avenger
+author=sdwfrost
+description=Defender-style shooter: thrust, flip, rescue the humans, clear the waves.
+bundleID=com.sdwfrost.classics.avenger
+version=1.0
+buildNumber=1

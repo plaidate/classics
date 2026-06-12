@@ -1,0 +1,6 @@
+name=Leading Edge PD
+author=sdwfrost
+description=Pseudo-3D night racing: crank to steer, A to accelerate, B to brake.
+bundleID=com.sdwfrost.classics.leadingedge
+version=1.0
+buildNumber=1
