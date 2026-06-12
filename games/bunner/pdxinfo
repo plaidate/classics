@@ -1,0 +1,6 @@
+name=Bunner
+author=sdwfrost
+description=An endless road-crosser: hop upstream, dodge cars and trains, ride the logs.
+bundleID=com.sdwfrost.classics.bunner
+version=1.0
+buildNumber=1
