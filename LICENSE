@@ -1,10 +1,5 @@
 BSD 2-Clause License
 
-This is a derivative work of Code the Classics
-(https://github.com/raspberrypipress), reimplemented for the Playdate.
-The upstream copyright notice is retained per its license terms; the
-upstream notice file is preserved verbatim as LICENSE-ASSETS.
-
 Copyright (c) 2019 Eben Upton
 Copyright (c) 2026 sdwfrost (Playdate implementation)
 
