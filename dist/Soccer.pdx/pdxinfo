@@ -1,0 +1,8 @@
+name=Sunday Soccer
+author=sdwfrost
+description=Top-down 7-a-side football: run, pass, shoot, defend.
+bundleID=com.sdwfrost.classics.soccer
+version=1.0
+buildNumber=1
+pdxversion=20300
+buildtime=834596975

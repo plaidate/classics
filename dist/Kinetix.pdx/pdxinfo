@@ -1,0 +1,8 @@
+name=Kinetix PD
+author=sdwfrost
+description=Brick breaker: the crank is the bat, A serves the ball.
+bundleID=com.sdwfrost.classics.kinetix
+version=1.0
+buildNumber=1
+pdxversion=20300
+buildtime=834596978

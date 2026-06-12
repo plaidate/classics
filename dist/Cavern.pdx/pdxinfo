@@ -1,0 +1,8 @@
+name=Cavern PD
+author=sdwfrost
+description=Trap the robots in orbs, pop them, and grab the fruit.
+bundleID=com.sdwfrost.classics.cavern
+version=1.0
+buildNumber=1
+pdxversion=20300
+buildtime=834596968

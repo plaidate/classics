@@ -28,6 +28,7 @@ build/$(1)/source: core/*.lua games/$(1)/*
 	mkdir -p $$@ $(OUT)
 	cp core/*.lua $$@/
 	cp -r games/$(1)/* $$@/
+	rm -f $$@/README.md $$@/screenshot.png
 	cp LICENSE LICENSE-ASSETS $$@/
 	echo 'SMOKE_BUILD = false' > $$@/smokeflag.lua
 
@@ -35,6 +36,7 @@ build/$(1)-smoke/source: core/*.lua games/$(1)/*
 	mkdir -p $$@ $(OUT)
 	cp core/*.lua $$@/
 	cp -r games/$(1)/* $$@/
+	rm -f $$@/README.md $$@/screenshot.png
 	cp LICENSE LICENSE-ASSETS $$@/
 	echo 'SMOKE_BUILD = true' > $$@/smokeflag.lua
 
