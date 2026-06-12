@@ -1,0 +1,8 @@
+name=Beat Streets PD
+author=sdwfrost
+description=A side-scrolling brawler: punch, kick, and fight your way down the street.
+bundleID=com.sdwfrost.classics.beatstreets
+version=1.0
+buildNumber=1
+pdxversion=20300
+buildtime=834597003

@@ -1,0 +1,8 @@
+name=Myriapod PD
+author=sdwfrost
+description=A Centipede-style shooter: split the myriapod, mind the spider.
+bundleID=com.sdwfrost.classics.myriapod
+version=1.0
+buildNumber=1
+pdxversion=20300
+buildtime=834596974
