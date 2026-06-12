@@ -6,14 +6,16 @@ driving the books' converted artwork and audio.
 
 Licensing: the Code the Classics content (including artwork and audio,
 converted here for the Playdate's 1-bit display) is copyright 2019
-Eben Upton and licensed BSD-2-Clause — see LICENSE-ASSETS, which the
+Eben Upton and licensed under BSD terms — see LICENSE-ASSETS, which the
 Makefile also stages into every built pdx so binary redistribution
 carries the notice, as the license requires. Volume 2 content credits:
 games by Andrew Gillett with Eben Upton and Sean M. Tracey, graphics by
 Dan Malone, audio by Allister Brimble. The Lua implementations are a
 derivative work of Code the Classics
 (https://github.com/raspberrypipress), reimplemented for the Playdate,
-and are licensed under the same BSD-2-Clause terms: LICENSE covers the
+and are licensed under the same BSD terms (3-clause: the
+upstream notice's body includes the no-endorsement clause despite its
+header's 2-clause label): LICENSE covers the
 whole work and retains the upstream copyright notice per its terms;
 LICENSE-ASSETS preserves the upstream notice file verbatim.
 
