@@ -31,15 +31,16 @@ Do not modify core/, the Makefile, tools/, or other games' directories.
      `function playdate.update() Harness.frame(G.frame + 1, tick) end`
      (use the game's frame counter), plus
      `Harness.extra = function(t) t.state = ... end` with the same fields
-     the old heartbeat wrote, and
-     `Harness.shotPath = "classics/build/<game>-shot.png"`.
+     the old heartbeat wrote. Screenshots need no per-game line: the
+     Makefile injects `SMOKE_SHOT_PATH` into each smoke build's
+     `smokeflag.lua` and the harness writes there automatically.
    - Smoke-only tuning that lived in patches (e.g. soccer's short halves,
      eggzy's long clock) becomes `KEY = SMOKE_BUILD and X or Y` in config
      with a brief comment.
-   - Ignore any screenshot/writeToFile lines in old smoke sources —
-     Harness.shotPath replaces them.
-6. **Build**: `cd classics && make
-   <game> && make <game>-smoke`. If the sandbox denies make/pdc, write
+   - Ignore any screenshot/writeToFile lines in old smoke sources — the
+     harness's auto `shotPath` replaces them.
+6. **Build**: from the package root, `make <game> && make <game>-smoke`.
+   If the sandbox denies make/pdc, write
    everything and report "pdc denied" — the parent compiles. NEVER launch
    the Playdate Simulator.
 

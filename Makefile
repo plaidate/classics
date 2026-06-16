@@ -28,7 +28,7 @@ build/$(1)/source: core/*.lua games/$(1)/*
 	mkdir -p $$@ $(OUT)
 	cp core/*.lua $$@/
 	cp -r games/$(1)/* $$@/
-	rm -f $$@/README.md $$@/screenshot.png
+	rm -f $$@/README.md $$@/screenshot.png $$@/*.py
 	cp LICENSE LICENSE-ASSETS $$@/
 	echo 'SMOKE_BUILD = false' > $$@/smokeflag.lua
 
@@ -36,9 +36,10 @@ build/$(1)-smoke/source: core/*.lua games/$(1)/*
 	mkdir -p $$@ $(OUT)
 	cp core/*.lua $$@/
 	cp -r games/$(1)/* $$@/
-	rm -f $$@/README.md $$@/screenshot.png
+	rm -f $$@/README.md $$@/screenshot.png $$@/*.py
 	cp LICENSE LICENSE-ASSETS $$@/
 	echo 'SMOKE_BUILD = true' > $$@/smokeflag.lua
+	echo 'SMOKE_SHOT_PATH = "$(CURDIR)/build/$(1)-shot.png"' >> $$@/smokeflag.lua
 
 .PHONY: $(1) $(1)-smoke
 endef

@@ -13,7 +13,7 @@ Harness = {
     counters = {},
     autopilot = nil, -- game sets Harness.autopilot = function() ... end
     extra = nil,     -- optional fn(tbl) adding fields to the heartbeat
-    shotPath = nil,  -- host path for screenshots (set by the game or smoke.sh convention)
+    shotPath = SMOKE_SHOT_PATH, -- abs host path the Makefile injects into smoke builds (nil otherwise)
 }
 
 function Harness.count(key, n)

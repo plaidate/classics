@@ -85,7 +85,6 @@ function playdate.update()
     Harness.frame(G.frame + 1, tick)
 end
 
-Harness.shotPath = "classics/build/beatstreets-shot.png"
 Harness.extra = function(t)
     t.state = G.state
     t.score = G.score

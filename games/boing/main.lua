@@ -64,7 +64,6 @@ function playdate.update()
     Harness.frame(G.frame + 1, tick)
 end
 
-Harness.shotPath = "classics/build/boing-shot.png"
 Harness.extra = function(t)
     t.state = G.state
     t.p1 = G.bats and G.bats[1].score or -1

@@ -89,7 +89,6 @@ function playdate.update()
     Harness.frame(G.frame + 1, tick)
 end
 
-Harness.shotPath = "classics/build/leadingedge-shot.png"
 Harness.extra = function(t)
     local R = G.race
     local p = R and R.player
