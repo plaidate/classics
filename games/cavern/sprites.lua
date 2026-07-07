@@ -90,9 +90,9 @@ function Sprites.build()
 end
 
 -- feet-anchored draw (x = center, y = feet)
-function Sprites.drawAnchored(img, x, y, flipped)
+function Sprites.drawAnchored(img, x, y)
     local w, h = img:getSize()
-    img:draw(x - w / 2, y - h, flipped and gfx.kImageFlippedX or gfx.kImageUnflipped)
+    img:draw(x - w / 2, y - h)
 end
 
 -- center-anchored draw (orbs, bolts, pops)

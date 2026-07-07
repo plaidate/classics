@@ -7,8 +7,8 @@ local gfx <const> = playdate.graphics
 
 Draw = {}
 
-local drawAnchored = function(...) return Sprites.drawAnchored(...) end
-local drawCentered = function(...) return Sprites.drawCentered(...) end
+local drawAnchored = Sprites.drawAnchored
+local drawCentered = Sprites.drawCentered
 
 function Draw.grid()
     Sprites.bg[G.theme + 1]:draw(0, 0)
@@ -33,8 +33,10 @@ local function playerImage(c)
     return Sprites.still
 end
 
+local FRUIT_FRAMES <const> = { 0, 1, 2, 1 }
+
 local function fruitFrame()
-    return ({ 0, 1, 2, 1 })[(G.frame // 3) % 4 + 1]
+    return FRUIT_FRAMES[(G.frame // 3) % 4 + 1]
 end
 
 local function drawEntities()

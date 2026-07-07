@@ -45,6 +45,8 @@ function Player.kill()
     G.lives = G.lives - 1
 end
 
+local FLYER_KINDS <const> = { "bee", "fly", "spider" }
+
 local function checkContact()
     local p = G.player
     if p.invulnT > 0 then return end
@@ -55,7 +57,7 @@ local function checkContact()
             return
         end
     end
-    for _, kind in ipairs({ "bee", "fly", "spider" }) do
+    for _, kind in ipairs(FLYER_KINDS) do
         local e = G[kind]
         if e and math.abs(e.x - p.x) < 9 and math.abs(e.y - p.y) < 9 then
             Player.kill()

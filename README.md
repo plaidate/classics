@@ -5,7 +5,9 @@ Both volumes of Code the Classics, ported to the
 core library — game logic written from scratch, driving the books'
 artwork and audio, converted for the 1-bit display.
 
-Each game links to its own page with controls, rules, and a screenshot.
+The [player manual](MANUAL.md) covers every game's controls, rules, and
+tips; the [developer guide](DEVGUIDE.md) covers the shared core and build
+system. Each game below also links to its own page with a screenshot.
 
 | Game | Style | Volume |
 |---|---|---|
@@ -22,7 +24,8 @@ Each game links to its own page with controls, rules, and a screenshot.
 
 ## Playing (no build needed)
 
-Ready-to-run copies of every game live in [`dist/`](dist/).
+Ready-to-run copies of every game live in [`dist/`](dist/), and prebuilt
+`.pdx` are attached to each [GitHub Release](../../releases).
 
 - **On a Playdate**: sign in at [play.date/account/sideload](https://play.date/account/sideload),
   upload the `.pdx` you want (zip it first if your browser requires a

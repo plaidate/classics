@@ -31,7 +31,7 @@ import "projectiles"
 import "player"
 import "draw"
 
--- Each wave fields six landers plus one more per wave, with pods joining
+-- Each wave fields five landers plus one more per wave, with pods joining
 -- from wave four. Every fifth wave is baiters with a mutant escort instead,
 -- and every tenth swaps the mutants for swarmers. Humans are restocked.
 local function newWave()

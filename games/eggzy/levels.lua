@@ -222,8 +222,9 @@ function Level.ladder(x, y)
 end
 
 -- find a ladder column near x at height y; returns its center x or nil
+local GRAB_OFFSETS = { 0, -C.LADDER_GRAB_RANGE, C.LADDER_GRAB_RANGE }
 function Level.ladderGrab(x, y)
-    for _, off in ipairs({ 0, -C.LADDER_GRAB_RANGE, C.LADDER_GRAB_RANGE }) do
+    for _, off in ipairs(GRAB_OFFSETS) do
         if Level.ladder(x + off, y) then
             local cx = math.floor((x + off) / C.TILE) * C.TILE + C.TILE // 2
             if math.abs(cx - x) <= C.LADDER_GRAB_RANGE then

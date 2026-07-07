@@ -1,4 +1,4 @@
--- Phosphor core: the smoke-test harness as a first-class module.
+-- Classics core: the smoke-test harness as a first-class module.
 --
 -- The Makefile stages smokeflag.lua into every build: SMOKE_BUILD=false for
 -- release, true for `make smoke`. When off, everything here is a no-op and
@@ -26,7 +26,7 @@ function Harness.set(key, val)
     Harness.counters[key] = val
 end
 
--- wraps the real per-frame update; called by Attract
+-- wraps the real per-frame update; each game's playdate.update calls this
 function Harness.frame(frame, updateFn)
     if not Harness.enabled then
         updateFn()

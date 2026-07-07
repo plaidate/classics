@@ -33,7 +33,6 @@ function Assets.build()
     load("terrain")
     load("radar")
     load("title")
-    load("gameover")
     load("life")
     load("armor")
     load("dot-white")
@@ -58,7 +57,6 @@ function Assets.build()
     seq("human_saved", 0)
     seq("human_stand", 0)
     seq("start", 13)
-    seq("newgame", 6)
 
     for d = 0, 1 do
         for f = 0, 1 do

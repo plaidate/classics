@@ -3,7 +3,7 @@
 -- Vol 1 (no code or assets reused). The crank is your bat.
 --
 --   config.lua    C: tunables
---   util.lua      Util: clamp + scheduler
+--   (core) lib    Util: clamp + scheduler; Harness: smoke harness
 --   sfx.lua       Sfx: sampled sounds + title music
 --   gamestate.lua G: shared state
 --   game.lua      Game: ball physics, bats, AI, scoring

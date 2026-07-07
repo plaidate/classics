@@ -126,13 +126,6 @@ function Track.build()
     end
 end
 
--- 0-based index of the piece containing z (pieces span [-i-1, -i)).
-function Track.idxForZ(z)
-    local idx = math.floor(-z)
-    if idx < 0 or idx >= Track.count then return nil end
-    return idx
-end
-
 -- 0-based index and Z of the first piece at or ahead of z.
 function Track.aheadIdx(z)
     local idx = math.ceil(-z)

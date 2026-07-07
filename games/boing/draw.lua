@@ -34,11 +34,7 @@ end
 
 local function textWhite(s, x, y, align)
     gfx.setImageDrawMode(gfx.kDrawModeFillWhite)
-    if align then
-        gfx.drawTextAligned(s, x, y, align)
-    else
-        gfx.drawText(s, x, y)
-    end
+    gfx.drawTextAligned(s, x, y, align)
     gfx.setImageDrawMode(gfx.kDrawModeCopy)
 end
 

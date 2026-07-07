@@ -1,10 +1,10 @@
 #!/bin/bash
-# Phosphor smoke runner: build the instrumented variant, run it in the
+# Classics smoke runner: build the instrumented variant, run it in the
 # Playdate Simulator, poll the datastore, report.
 #
 #   tools/smoke.sh <game> [seconds] [until-grep]
 #
-# e.g. tools/smoke.sh rubble 180 '"gameovers":[1-9]'
+# e.g. tools/smoke.sh cavern 180 '"gameovers":[1-9]'
 
 set -u
 GAME="${1:?usage: smoke.sh <game> [seconds] [until-grep]}"

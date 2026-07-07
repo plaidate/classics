@@ -23,6 +23,8 @@ function AI.cost(x, y, team)
 end
 
 -- pick one or two opponents to hound the carrier, aiming ahead of him
+local leads <const> = { 6, 30 }
+
 function AI.assign()
     for _, p in ipairs(G.players) do p.chase = nil end
     local o = G.ball.owner
@@ -36,7 +38,6 @@ function AI.assign()
     table.sort(cands, function(a, b)
         return Util.dist(a.x, a.y, o.x, o.y) < Util.dist(b.x, b.y, o.x, o.y)
     end)
-    local leads = { 6, 30 }
     for i = 1, math.min(G.diff().chasers, #cands) do
         cands[i].chase = leads[i]
     end

@@ -9,15 +9,15 @@ end
 
 local function spawnBee()
     local fromLeft = math.random(2) == 1
+    local baseY = (math.random(3, 9) + 0.5) * C.CELL
     G.bee = {
         x = fromLeft and -10 or C.SCREEN_W + 10,
-        y = 0,
-        baseY = (math.random(3, 9) + 0.5) * C.CELL,
+        y = baseY,
+        baseY = baseY,
         dx = fromLeft and 1 or -1,
         t = math.random() * 4,
         lastCx = -99,
     }
-    G.bee.y = G.bee.baseY
 end
 
 local function spawnFly()

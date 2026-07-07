@@ -110,6 +110,8 @@ local function frameIndex(p)
     return math.floor(p.animT / 9) % 4 + 1
 end
 
+local function byY(a, b) return a.y < b.y end
+
 local function drawWorld()
     local cam = math.floor(G.camY + 0.5)
     gfx.clear(gfx.kColorWhite)
@@ -121,7 +123,7 @@ local function drawWorld()
     for i, p in ipairs(G.players) do order[i] = p end
     local ball = G.ball
     if ball then order[#order + 1] = ball end
-    table.sort(order, function(a, b) return a.y < b.y end)
+    table.sort(order, byY)
 
     for _, o in ipairs(order) do
         local x, y = math.floor(o.x + 0.5), math.floor(o.y + 0.5) - cam

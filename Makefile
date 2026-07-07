@@ -1,10 +1,10 @@
 # Classics — Code the Classics volumes 1+2 on a shared core.
 #
-#   make rubble            build games/rubble -> out/Rubble.pdx
-#   make rubble-smoke      instrumented build -> out/RubbleSmoke.pdx
+#   make cavern            build games/cavern -> out/Cavern.pdx
+#   make cavern-smoke      instrumented build -> out/CavernSmoke.pdx
 #   make all               every game, release builds
 #
-# A build stages vec/* + games/<g>/* into build/<g>/source (pdc wants one
+# A build stages core/* + games/<g>/* into build/<g>/source (pdc wants one
 # source root), writes smokeflag.lua, then runs pdc.
 
 GAMES := boing cavern bunner myriapod soccer kinetix avenger eggzy leadingedge beatstreets

@@ -15,7 +15,6 @@ G = {
     barrels = {},  -- { x, y, hp, hitT }
     pickups = {},  -- { x, y }
     input = { dx = 0, dy = 0, punch = false, kick = false, start = false },
-    auto = { t = 0 }, -- autopilot scratch state
 }
 
 local saved = playdate.datastore.read()

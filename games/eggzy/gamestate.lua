@@ -25,7 +25,7 @@ G = {
     player = nil,
     newHigh = false,
 
-    auto = { t = 0, dir = 0 },
+    auto = { t = 0 },
 }
 
 local saved = playdate.datastore.read()
