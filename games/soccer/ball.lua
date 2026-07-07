@@ -95,6 +95,7 @@ function Ball.update(inp)
             ball.wait = G.diff().patience
             if p.team == 1 then G.ctl = p end
             G.prekick, G.kickPlayer = false, nil
+            break -- one possession change per frame: no same-frame double-take
         end
     end
 

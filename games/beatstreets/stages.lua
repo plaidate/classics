@@ -160,7 +160,7 @@ function Stages.hitBarrels(f, atk)
         local b = G.barrels[i]
         local dx = b.x - f.x
         if b.hitT <= 0
-            and Util.sign(dx) == f.facing
+            and dx * f.facing >= 0 -- at or ahead of us (a point-blank hit still lands)
             and math.abs(dx) < atk.reach + 14
             and math.abs(b.y - f.y) < C.HALF_HIT_H + 5 then
             b.hp = b.hp - 1
