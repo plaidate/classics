@@ -1,5 +1,7 @@
 # Classics
 
+> Part of **[plAIdate](https://plaidate.github.io)** — AI-built 1-bit games, ports, and engines for the Playdate.
+
 Both volumes of Code the Classics, ported to the
 [Playdate](https://play.date) as original Lua implementations sharing one
 core library — game logic written from scratch, driving the books'
