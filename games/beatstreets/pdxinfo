@@ -1,6 +1,7 @@
 name=Beat Streets PD
-author=sdwfrost
+author=Simon Frost
 description=A side-scrolling brawler: punch, kick, and fight your way down the street.
 bundleID=com.sdwfrost.classics.beatstreets
 version=1.0
-buildNumber=1
+buildNumber=2
+imagePath=launcher

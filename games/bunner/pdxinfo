@@ -1,6 +1,7 @@
 name=Bunner
-author=sdwfrost
+author=Simon Frost
 description=An endless road-crosser: hop upstream, dodge cars and trains, ride the logs.
 bundleID=com.sdwfrost.classics.bunner
 version=1.0
-buildNumber=1
+buildNumber=2
+imagePath=launcher

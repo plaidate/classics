@@ -1,6 +1,7 @@
 name=Avenger
-author=sdwfrost
+author=Simon Frost
 description=Defender-style shooter: thrust, flip, rescue the humans, clear the waves.
 bundleID=com.sdwfrost.classics.avenger
 version=1.0
-buildNumber=1
+buildNumber=2
+imagePath=launcher
